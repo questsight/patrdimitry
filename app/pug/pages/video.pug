@@ -1,0 +1,44 @@
+extends ../layouts/default.pug
+
+block site__content
+  section.section.single
+    .section-header.single-header.text-center
+      h1.section-title.section-title-accent.single-title
+        | Lorem ipsum dolor sit amet
+      .line
+        .line-item.line-item-accent
+        .line-square.line-square-accent
+          i.fa.fa-square(aria-hidden='true')
+        .line-item.line-item-accent
+    .section-content.single-content
+      .container
+        .row
+          .col
+            iframe(src='https://www.youtube.com/embed/-yWBJejLqoI', width='853' height='480', frameborder='0', allowfullscreen='allowfullscreen')
+    .section-footer.single-footer
+      .rambler-share.text-center
+      script.
+        ( function() {
+          var init = function() {
+            RamblerShare.init('.rambler-share', {
+              'style': {
+                'buttonHeight': 28,
+                'iconSize': 16,
+                'buttonBackground': '#007b7d'
+              },
+              'utm': 'utm_source=social',
+              'counters': true,
+              'buttons': [
+                'vkontakte',
+                'facebook',
+                'odnoklassniki',
+                'twitter'
+              ]
+            });
+          };
+          var script = document.createElement( 'script' );
+          script.onload = init;
+          script.async = true;
+          script.src = 'https://developers.rambler.ru/likes/widget.js';
+          document.head.appendChild(script);
+        })();

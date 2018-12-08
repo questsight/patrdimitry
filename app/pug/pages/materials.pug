@@ -1,0 +1,55 @@
+extends ../layouts/default.pug
+
+block site__content
+  section.section.material
+    .section__header.material__header
+      .wrapper
+        h1.section__title.section__title_color_accent.material__title
+          | В помощь ухаживающим
+        .line
+          .line__item.line__item_color_accent
+          .line__square.line__square_color_accent
+            i.fa.fa-square(aria-hidden='true')
+          .line__item.line__item_color_accent
+        .section__subtitle.section__subtitle_color_accent.material__subtitle
+          | Полезные материалы для родственников и людей, осуществляющих уход
+    .section__content.material__content
+      .container.text-center
+        .row
+          section.material__one.col-sm-4
+            a.material__link.link(href='#')
+              .material__thumbnail
+                i.fas.fa-clone
+              h2.material__name.name
+                | Памятки по социальной защите
+          section.material__one.col-sm-4
+            a.material__link.link(href='#')
+              .material__thumbnail
+                i.far.fa-comments
+              h2.material__name.name
+                | Вопросы и ответы
+          section.material__one.col-sm-4
+            a.material__link.link(href='#')
+              .material__thumbnail
+                i.far.fa-edit
+              h2.material__name.name
+                | Полезные статьи для ухаживающих
+        .row
+          section.material__one.col-sm-4
+            a.material__link.link(href='#')
+              .material__thumbnail
+                i.fas.fa-book
+              h2.material__name.name
+                | Пособия для ухаживающих
+          section.material__one.col-sm-4
+            a.material__link.link(href='#')
+              .material__thumbnail
+                i.far.fa-image
+              h2.material__name.name
+                | Обучающие презентации по уходу
+          section.material__one.col-sm-4
+            a.material__link.link(href='#')
+              .material__thumbnail
+                i.fas.fa-film
+              h2.material__name.name
+                | Видеоматериалы по патронажному уходу

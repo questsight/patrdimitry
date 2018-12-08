@@ -1,0 +1,27 @@
+extends ../layouts/default.pug
+
+block site__content
+  section.section.page
+    .section__header.page__header
+      .wrapper
+        h1.section__title.section__title_color_accent.page__title
+          | Конкурс грантов мэра г. Москвы
+        .line
+          .line__item.line__item_color_accent
+          .line__square.line__square_color_accent
+            i.fa.fa-square(aria-hidden='true')
+          .line__item.line__item_color_accent
+        .section__subtitle.section__subtitle_color_accent.about__subtitle
+          | 
+    .section__content.page__content
+      .wrapper
+        .grant
+          .grant__thumb
+            a(href='http://грантымэра.душевная.москва', target='_blank')
+              img(src='assets/images/grants/grant_400.png', alt='Конкурс грантов мэра г. Москвы на 400 млн. руб.')
+          .grant__desc
+            p
+              | Патронажная служба &laquo;Милосердие&raquo; является постоянным участником конкурса грантов мэра г. Москвы. В 2018 г. общая сумма субсидий для НКО составляет 400 млн. руб. Комитет общественных связей г. Москвы приглашает социально ориентированные НКО принять участие в конкурсе 2018 г. Прием заявок открыт до 15.06.2018 г.
+      .button-group.text-center
+        a(href='http://грантымэра.душевная.москва', target='_blank').button.button_bg_accent
+          | Подать заявку

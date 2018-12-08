@@ -1,0 +1,59 @@
+.navigation__list
+  list-style-type none
+  margin 0
+  padding 0
+  text-align center
+  & > li
+    margin 0 0 20px
+    position relative
+    text-align center
+    &:last-child
+      margin 0
+    @media only screen and (min-width: md)
+      display inline-block
+      margin 0 15px 0 0
+      &:last-child
+        margin 0
+    &:hover ul
+      display block
+    & > a
+      color darkColor
+      border-bottom 2px solid transparent
+      display inline-block
+      font-size round(fontSize * 0.9)
+      font-weight 600
+      text-transform uppercase
+      transition-duration 0.35s
+      @media only screen and (min-width: md)
+        font-weight 400
+      &:hover
+        border-bottom 2px solid accentColor
+    & > ul
+      background transparent
+      display none
+      left 50%
+      margin 0 0 0 -100px
+      padding 10px 0 0
+      position absolute
+      transition-duration 0.35s
+      overflow hidden
+      width 200px
+      z-index 10
+      & > li
+        background themeOverlay
+        display block
+        border-bottom 1px solid lightColor
+        vertical-align top
+        position relative
+        &:last-child
+          border 0
+        & > a
+          background transparent
+          display block
+          color lightColor
+          font-size round(fontSize * 0.9)
+          padding 5px
+          transition-duration 0.35s
+          &:hover
+            background themeColor
+            color lightColor

@@ -1,0 +1,20 @@
+header.site__header.header
+  table.header__table
+    tbody
+      tr
+        td.header__td
+          .header__logo
+            a(href='#')
+              img(src='assets/images/logo/logo.png')
+        td.header__td
+          include navigation.pug
+        td.header__td.text-right
+          #header__search.header__search
+            i.fas.fa-search
+        td.header__td.text-right
+          .header__phone
+            i.fas.fa-mobile-alt
+            | +7 (499) 705-88-20
+        td.header__td.text-right
+          .header__hamburger
+            include hamburger.pug

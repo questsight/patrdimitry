@@ -1,0 +1,55 @@
+extends ../layouts/default.pug
+
+block site__content
+	section.section.single
+		.section__header.single__header
+			.wrapper
+				h1.section__title.section__title_color_accent.single__title
+					| Lorem ipsum dolor sit amet
+				.line
+					.line__item.line__item_color_accent
+					.line__square.line__square_color_accent
+						i.fa.fa-square(aria-hidden='true')
+					.line__item.line__item_color_accent
+		.section__content.single__content
+			.wrapper
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at mollis metus. Curabitur at vehicula turpis, ut ornare dui. Quisque interdum lacus at risus tristique, vel cursus libero rhoncus. Aliquam iaculis auctor sollicitudin. Morbi lacinia porta arcu, eget scelerisque turpis lacinia quis. Nam vehicula elit at luctus vestibulum. Etiam ullamcorper diam tortor, et feugiat libero sodales eu. In volutpat velit felis, quis pellentesque sapien pulvinar non. Praesent et ex dolor. Aliquam tempus sapien non risus semper tincidunt. Ut varius felis ligula, sit amet ultrices lorem tincidunt et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at mollis metus. Curabitur at vehicula turpis, ut ornare dui. Quisque interdum lacus at risus tristique, vel cursus libero rhoncus. Aliquam iaculis auctor sollicitudin. Morbi lacinia porta arcu, eget scelerisque turpis lacinia quis. Nam vehicula elit at luctus vestibulum. Etiam ullamcorper diam tortor, et feugiat libero sodales eu. In volutpat velit felis, quis pellentesque sapien pulvinar non. Praesent et ex dolor. Aliquam tempus sapien non risus semper tincidunt. Ut varius felis ligula, sit amet ultrices lorem tincidunt et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at mollis metus. Curabitur at vehicula turpis, ut ornare dui. Quisque interdum lacus at risus tristique, vel cursus libero rhoncus. Aliquam iaculis auctor sollicitudin. Morbi lacinia porta arcu, eget scelerisque turpis lacinia quis. Nam vehicula elit at luctus vestibulum. Etiam ullamcorper diam tortor, et feugiat libero sodales eu. In volutpat velit felis, quis pellentesque sapien pulvinar non. Praesent et ex dolor. Aliquam tempus sapien non risus semper tincidunt. Ut varius felis ligula, sit amet ultrices lorem tincidunt et. 
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at mollis metus. Curabitur at vehicula turpis, ut ornare dui. Quisque interdum lacus at risus tristique, vel cursus libero rhoncus. Aliquam iaculis auctor sollicitudin. Morbi lacinia porta arcu, eget scelerisque turpis lacinia quis. Nam vehicula elit at luctus vestibulum. Etiam ullamcorper diam tortor, et feugiat libero sodales eu. In volutpat velit felis, quis pellentesque sapien pulvinar non. Praesent et ex dolor. Aliquam tempus sapien non risus semper tincidunt. Ut varius felis ligula, sit amet ultrices lorem tincidunt et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at mollis metus. Curabitur at vehicula turpis, ut ornare dui. Quisque interdum lacus at risus tristique, vel cursus libero rhoncus. Aliquam iaculis auctor sollicitudin. Morbi lacinia porta arcu, eget scelerisque turpis lacinia quis. Nam vehicula elit at luctus vestibulum. Etiam ullamcorper diam tortor, et feugiat libero sodales eu. In volutpat velit felis, quis pellentesque sapien pulvinar non. Praesent et ex dolor. Aliquam tempus sapien non risus semper tincidunt. Ut varius felis ligula, sit amet ultrices lorem tincidunt et.
+		.section__footer.single__footer
+			.wrapper
+				.single__line
+				.single__help.text-center
+					| Патронажная служба Милосердие существует в основном за счет пожертвований. Если материал был вам полезен, вы можете помочь службе. Собранные средства идут на оплату патронажного ухода для наших подопечных и дальнейшую публикацию полезной информации на сайте.
+				.button-group.text-center
+					a.button.button_bg_accent.button_size_large(href="#")
+						| Поддержать службу
+				.single__line
+			.wrapper
+				.rambler-share.text-center
+					script.
+						( function() {
+							var init = function() {
+								RamblerShare.init('.rambler-share', {
+									"style": {
+										"buttonHeight": 28,
+										"iconSize": 16,
+										"buttonBackground": "#007b7d"
+									},
+									"utm": "utm_source=social",
+									"counters": true,
+									"buttons": [
+										"vkontakte",
+										"facebook",
+										"odnoklassniki",
+										"twitter"
+									]
+								});
+							};
+							var script = document.createElement( 'script' );
+							script.onload = init;
+							script.async = true;
+							script.src = 'https://developers.rambler.ru/likes/widget.js';
+							document.head.appendChild(script);
+						})();
